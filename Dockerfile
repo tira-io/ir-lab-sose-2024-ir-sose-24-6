@@ -2,8 +2,8 @@
 FROM webis/ir-lab-wise-2023:0.0.4
 
 # Update the tira command to use the latest version
-RUN pip3 uninstall -y tira nltk \
-	&& pip3 install tira nltk
+RUN pip3 uninstall -y tira nltk spacy \
+	&& pip3 install tira nltk spacy
 
 ADD . /app
 
